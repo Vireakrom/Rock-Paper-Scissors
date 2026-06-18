@@ -4,7 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="./scripts.js"></script>
+    <script src="./scripts.js" defer></script>
+    <style>
+      .heading,
+      .result {
+        text-align: center;
+      }
+      .btn {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      #btn1,
+      #btn2,
+      #btn3 {
+        border: 1px solid black;
+        border-radius: 3px;
+        width: 100px;
+        height: 30px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="heading">
+      <h1>Play Rock-Paper-Scissors</h1>
+    </div>
+    <div class="btn">
+      <button id="btn1">Rock</button>
+      <button id="btn2">Paper</button>
+      <button id="btn3">Scissors</button>
+    </div>
+    <div class="result">
+      <p id="personScore">Your Score: 0</p>
+      <p id="pcScore">Computer Score: 0</p>
+      <p id="winner"></p>
+    </div>
+  </body>
 </html>
